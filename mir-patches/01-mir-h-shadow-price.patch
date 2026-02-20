@@ -1,0 +1,9 @@
+--- a/mir.h
++++ b/mir.h
+@@ -313,6 +313,7 @@ typedef struct MIR_func {
+   VARR (MIR_var_t) * global_vars; /* can be NULL */
+   void *machine_code;             /* address of generated machine code or NULL */
++  double shadow_price;            /* NUM experiment: utility signal (default 1.0) */
+   void *call_addr;
+   void *internal;
+   struct MIR_lref_data *first_lref;

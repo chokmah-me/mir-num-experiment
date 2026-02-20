@@ -1,0 +1,50 @@
+--- a/mir-gen.c
++++ b/mir-gen.c
+@@ -114,1 +114,47 @@
+ #include "mir-gen.h"
++
++/* ======== NUM EXPERIMENT LOGGING ======== */
++
++static FILE *experiment_log = NULL;
++
++void mir_experiment_init_logging(const char *filename) {
++  experiment_log = fopen(filename, "w");
++  if (experiment_log) {
++    fprintf(experiment_log,
++      "func_name,shadow_price,ir_count,inlined,threshold_baseline,threshold_adjusted\n");
++  }
++}
++
++void mir_experiment_close_logging(void) {
++  if (experiment_log) {
++    fclose(experiment_log);
++    experiment_log = NULL;
++  }
++}
++
++static void log_inlining_decision(const char *func_name, double shadow_price,
++                                   int ir_count, int inlined,
++                                   int threshold_baseline, int threshold_adjusted) {
++  if (experiment_log) {
++    fprintf(experiment_log, "%s,%.2f,%d,%d,%d,%d\n",
++      func_name, shadow_price, ir_count, inlined,
++      threshold_baseline, threshold_adjusted);
++    fflush(experiment_log);
++  }
++}
++
++int should_inline_with_num(const char *func_name, int ir_count,
++                            double shadow_price) {
++  int baseline_threshold = 50;
++  double lambda_scale = shadow_price / 100.0;
++  if (lambda_scale < 0.1) lambda_scale = 0.1;
++  if (lambda_scale > 5.0) lambda_scale = 5.0;
++  int adjusted_threshold = (int)(baseline_threshold * lambda_scale);
++  if (adjusted_threshold < 10) adjusted_threshold = 10;
++  if (adjusted_threshold > 500) adjusted_threshold = 500;
++  int inlined = (ir_count < adjusted_threshold) ? 1 : 0;
++  log_inlining_decision(func_name, shadow_price, ir_count, inlined,
++                         baseline_threshold, adjusted_threshold);
++  return inlined;
++}
++/* ======== END NUM EXPERIMENT LOGGING ======== */

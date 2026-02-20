@@ -1,0 +1,17 @@
+# Build artifacts
+*.o
+*.so
+*.a
+mir-gen
+test-num-experiment
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data (we'll add these explicitly)
+# *.csv
+
+# OS
+.DS_Store
