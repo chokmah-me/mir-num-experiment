@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: Bilar
+    given-names: Daniyel Yaacov
+    affiliation: Chokmah LLC
+title: "Empirical Validation of Compiler-as-NUM Hypothesis: MIR JIT Experiment"
+version: 1.0.0
+date-released: 2026-02-20
+url: "https://github.com/chokmah-me/mir-num-experiment"
+repository-code: "https://github.com/chokmah-me/mir-num-experiment"
+keywords:
+  - compiler optimization
+  - JIT compilation
+  - network utility maximization
+  - dual decomposition
+  - empirical validation
+license: MIT
