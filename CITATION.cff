@@ -16,3 +16,7 @@ keywords:
   - dual decomposition
   - empirical validation
 license: MIT
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18714810

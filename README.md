@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18714810.svg)](https://doi.org/10.5281/zenodo.18714810)
+
 # MIR NUM Validation Experiment
 
 Empirical validation of the compiler-as-NUM hypothesis using MIR (Medium Internal Representation) JIT compiler.
@@ -109,7 +111,7 @@ MIT License - See LICENSE file
   journal={Journal of Systems Architecture},
   year={2026},
   note={Submitted},
-  doi={10.5281/zenodo.XXXXXXX}
+  doi={10.5281/zenodo.18714810}
 }
 ```
 
