@@ -1,17 +1,30 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18714810.svg)](https://doi.org/10.5281/zenodo.18714810)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18715390.svg)](https://doi.org/10.5281/zenodo.18715390)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18735516.svg)](https://doi.org/10.5281/zenodo.18735516)
+
 
 # MIR NUM Validation Experiment
 
 Empirical validation of the compiler-as-NUM hypothesis using MIR (Medium Internal Representation) JIT compiler.
 
-## Publication
+## Preprint & Publications
 
-This repository contains the complete experimental infrastructure for:
+**Empirical Validation Paper (Preprint):**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18735516.svg)](https://doi.org/10.5281/zenodo.18735516)
 
-**"Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR"**  
-Daniyel Yaacov Bilar, Chokmah LLC
+Bilar, D. Y. (2026). Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR. Zenodo. https://doi.org/10.5281/zenodo.18735516
 
-Submitted to *Journal of Systems Architecture*, 2026.
+**Companion Theory Paper:**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18715390.svg)](https://doi.org/10.5281/zenodo.18715390)
+
+Bilar, D. Y. (2025). The Compiler as a Decomposed Optimization System. Zenodo. https://doi.org/10.5281/zenodo.18715390
+
+**Experimental Dataset:**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18714810.svg)](https://doi.org/10.5281/zenodo.18714810)
+
+Bilar, D. Y. (2026). Empirical Validation of Compiler-as-NUM Hypothesis: MIR JIT Experiment Dataset. Zenodo. https://doi.org/10.5281/zenodo.18714810
+
+**Status:** Submitted to Journal of Systems Architecture (Elsevier), 2026.
 
 ## Repository Structure
 ```
