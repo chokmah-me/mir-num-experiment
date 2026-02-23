@@ -1,7 +1,3 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18714810.svg)](https://doi.org/10.5281/zenodo.18714810)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18715390.svg)](https://doi.org/10.5281/zenodo.18715390)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18735516.svg)](https://doi.org/10.5281/zenodo.18735516)
-
 
 # MIR NUM Validation Experiment
 
@@ -10,9 +6,9 @@ Empirical validation of the compiler-as-NUM hypothesis using MIR (Medium Interna
 ## Preprint & Publications
 
 **Empirical Validation Paper (Preprint):**
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18735516.svg)](https://doi.org/10.5281/zenodo.18735516)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18736388.svg)](https://doi.org/10.5281/zenodo.18736388)
 
-Bilar, D. Y. (2026). Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR. Zenodo. https://doi.org/10.5281/zenodo.18735516
+Bilar, D. Y. (2026). Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR. Zenodo. https://doi.org/10.5281/zenodo.18736388
 
 **Companion Theory Paper:**
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18715390.svg)](https://doi.org/10.5281/zenodo.18715390)
