@@ -20,8 +20,6 @@ Bilar, D. Y. (2025). The Compiler as a Decomposed Optimization System. Zenodo. h
 
 Bilar, D. Y. (2026). Empirical Validation of Compiler-as-NUM Hypothesis: MIR JIT Experiment Dataset. Zenodo. https://doi.org/10.5281/zenodo.18714810
 
-**Status:** Submitted to Journal of Systems Architecture (Elsevier), 2026.
-
 ## Repository Structure
 ```
 mir-num-experiment/
