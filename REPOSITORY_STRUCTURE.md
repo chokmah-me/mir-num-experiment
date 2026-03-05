@@ -65,15 +65,4 @@ mir-num-experiment/
 | 2026-02-20 | v1.0.0 | Initial release (DOI: 10.5281/zenodo.18714810) |
 | 2026-03-05 | v1.0.0 | Publication update (DOI: 10.5281/zenodo.18828679) |
 
-## Citation
 
-```bibtex
-@article{bilar2026mir,
-  title={Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR},
-  author={Bilar, Daniyel Yaacov},
-  journal={Journal of Systems Architecture},
-  year={2026},
-  note={Preprint},
-  doi={10.5281/zenodo.18828679}
-}
-```
