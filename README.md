@@ -1,4 +1,3 @@
-
 # MIR NUM Validation Experiment
 
 Empirical validation of the compiler-as-NUM hypothesis using MIR (Medium Internal Representation) JIT compiler.
@@ -6,9 +5,9 @@ Empirical validation of the compiler-as-NUM hypothesis using MIR (Medium Interna
 ## Preprint & Publications
 
 **Empirical Validation Paper (Preprint):**
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18736388.svg)](https://doi.org/10.5281/zenodo.18736388)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18828679.svg)](https://doi.org/10.5281/zenodo.18828679)
 
-Bilar, D. Y. (2026). Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR. Zenodo. https://doi.org/10.5281/zenodo.18736388
+Bilar, D. Y. (2026). Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR. Zenodo. https://doi.org/10.5281/zenodo.18828679
 
 **Companion Theory Paper:**
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18715390.svg)](https://doi.org/10.5281/zenodo.18715390)
@@ -32,6 +31,10 @@ mir-num-experiment/
 │   ├── analyze-num.py
 │   ├── requirements.txt
 │   └── *.ps1 (build scripts)
+├── phase-2-poc/      # Phase 2 proof-of-concept
+│   ├── poc.c         # Context collapse / DCE validation
+│   ├── num_experiment.c   # 8-function NUM crucible
+│   └── README.md
 ├── data/             # Raw experimental results
 │   ├── baseline_decisions.csv
 │   ├── uniform_decisions.csv
@@ -117,8 +120,8 @@ MIT License - See LICENSE file
   author={Bilar, Daniyel Yaacov},
   journal={Journal of Systems Architecture},
   year={2026},
-  note={Submitted},
-  doi={10.5281/zenodo.18714810}
+  note={Preprint},
+  doi={10.5281/zenodo.18828679}
 }
 ```
 
