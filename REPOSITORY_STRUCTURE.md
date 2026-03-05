@@ -26,18 +26,18 @@ mir-num-experiment/
 │   │                     # 5-condition experiment: baseline, blind-all, random, shadow-price, inverted-price
 │   └── README.md        # PoC-specific documentation
 │
-├── data/                 # Raw experimental CSV results
+├── results/              # Raw experimental CSV results
 │   ├── baseline_decisions.csv      # Neutral control (λ = 100)
 │   ├── uniform_decisions.csv       # Replication control
 │   ├── skewed_decisions.csv        # Main test (λ ∈ {10, 1000})
-│   └── perturbed_decisions.csv     # Robustness test (skewed + noise)
+│   ├── perturbed_decisions.csv     # Robustness test (skewed + noise)
+│   └── num-analysis.png            # Comprehensive results visualization
 │
 ├── docs/                 # Extended documentation
 │   ├── EXPERIMENT.md     # Detailed experimental methodology
 │   └── REPRODUCTION.md   # Step-by-step reproduction guide
 │
 ├── README.md             # Main project overview
-├── CITATION.cff          # Citation metadata (updated 2026-03-05)
 └── LICENSE               # MIT License
 ```
 
@@ -46,7 +46,7 @@ mir-num-experiment/
 ### For Understanding the Research
 - **README.md** — Publication links, quick-start guide
 - **phase-2-poc/README.md** — Physical foundation & empirical results
-- **docs/EXPERIMENT.md** — Methodology details
+- **docs/REPRODUCTION.md** — Detailed reproduction instructions
 
 ### For Reproduction
 - **patches/*** — Apply to MIR source before building
@@ -55,8 +55,8 @@ mir-num-experiment/
 - **docs/REPRODUCTION.md** — Step-by-step instructions
 
 ### For Data & Results
-- **data/*.csv** — Raw 750-row decision logs per condition
-- **scripts/results/num-analysis.png** — Stratified analysis visualization
+- **results/*.csv** — Raw 750-row decision logs per condition
+- **results/num-analysis.png** — Stratified analysis visualization
 
 ## Version History
 

@@ -28,14 +28,16 @@ mir-num-experiment/
 ├── src/              # Test harness source
 │   └── test-num-experiment.c
 ├── scripts/          # Analysis and build scripts
-│   ├── analyze-num.py
 │   ├── requirements.txt
 │   └── *.ps1 (build scripts)
+├── src/              # Source code
+│   ├── test-num-experiment.c
+│   └── analyze-num.py
 ├── phase-2-poc/      # Phase 2 proof-of-concept
 │   ├── poc.c         # Context collapse / DCE validation
 │   ├── num_experiment.c   # 8-function NUM crucible
 │   └── README.md
-├── data/             # Raw experimental results
+├── results/          # Raw experimental results
 │   ├── baseline_decisions.csv
 │   ├── uniform_decisions.csv
 │   ├── skewed_decisions.csv
@@ -66,26 +68,28 @@ make
 
 2. **Build test harness:**
 ```bash
-gcc -o test-num-experiment src/test-num-experiment.c -I./mir -L./mir -lmir -lm
+gcc -O2 -I./mir src/test-num-experiment.c mir.c mir-gen.c -o test-num-experiment -lm
 ```
 
-3. **Run experiment:**
+3. **Run experiment (requires condition argument: baseline | uniform | skewed | perturbed):**
 ```bash
-./test-num-experiment
+./test-num-experiment baseline
+./test-num-experiment uniform
+./test-num-experiment skewed
+./test-num-experiment perturbed
 ```
 
 4. **Analyze results:**
 ```bash
-cd scripts
-pip install -r requirements.txt
-python analyze-num.py ../data/*.csv
+pip install -r src/requirements.txt
+python src/analyze-num.py results/*.csv
 ```
 
 See docs/REPRODUCTION.md for detailed instructions.
 
 ## Data Description
 
-Each CSV contains 750 rows (250 functions × 3 optimization levels) with columns:
+Each CSV contains 750 rows (50 functions × 5 sizes × 3 optimization levels) with columns:
 - **func_name**: Synthetic function identifier
 - **shadow_price**: Dual variable λ (execution frequency proxy)
 - **ir_count**: Function size in IR instructions

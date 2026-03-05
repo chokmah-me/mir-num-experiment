@@ -17,7 +17,7 @@ Set-Location $ProjectRoot
 
 # ---- Configuration ----
 $MirDir      = Join-Path $ProjectRoot 'mir-baseline'
-$PatchDir    = Join-Path $ProjectRoot 'mir-patches'
+$PatchDir    = Join-Path $ProjectRoot 'patches'
 $SrcDir      = Join-Path $ProjectRoot 'src'
 $ResultsDir  = Join-Path $ProjectRoot 'results'
 $OutputExe   = Join-Path $ProjectRoot 'test_baseline.exe'
